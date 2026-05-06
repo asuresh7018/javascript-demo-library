@@ -13,7 +13,7 @@
     </div>
 
     <dialog id="libraryDialog">
-        <form id="form" method="dialog">
+        <form id="form" action="#" method="POST">
             <div class="inputDiv">
                 <label for="Title">Title</label>
                 <input type="text" id="titleInput" name="title">
@@ -24,10 +24,14 @@
             </div>
             <div class="inputDiv">
                 <label for="Page Count">Page Count</label>
-                <input type="text" id="pageCountInput" name="pageCount">
+                <input type="number" id="pageCountInput" name="pageCount">
+            </div>
+            <div class="inputDiv">
+                <label for="Has Been Read?">Has Been Read?</label>
+                <input type="checkbox" id="hasBeenReadLabel" name="hasBeenRead">
             </div>
             <div>
-                <button id="closeDialog">Submit</button>
+                <input type="submit" id="closeDialog" value="Submit"></button>
             </div>
         </form>
     </dialog>

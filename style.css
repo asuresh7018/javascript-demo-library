@@ -9,12 +9,18 @@ body {
     border: 1px solid black;
     display: grid;
     gap: 10px;
+    grid-template-columns: repeat(auto-fit, 200px);
 }
 
 .book {
     width: 200px;
     height: 200px;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: column;
 }
 
 #libraryDialog {
@@ -30,5 +36,5 @@ body {
 
 .inputDiv {
     display: grid;
-    grid-template-columns: 100px 200px;
+    grid-template-columns: 150px 200px;
 }
